@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab4.Stage1Controller">
+   <children>
+      <TableView fx:id="table" layoutX="19.0" layoutY="103.0" prefHeight="430.0" prefWidth="892.0">
+        <columns>
+
+          <TableColumn fx:id="Nr" editable="true" prefWidth="47.99993896484375" text="Nr." />
+            <TableColumn fx:id="Vardas" editable="true" prefWidth="80.800048828125" text="Vardas" />
+          <TableColumn fx:id="Pavarde" editable="true" prefWidth="92.0" text="Pavardė" />
+            <TableColumn fx:id="Grupe" editable="true" prefWidth="166.40003967285156" text="Grupė" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn1" layoutX="52.0" layoutY="677.0" mnemonicParsing="false" onAction="#btn1pressed" text="Pridėti" />
+      <TextField fx:id="txt7" layoutX="168.0" layoutY="642.0" prefHeight="26.0" prefWidth="94.0" promptText="Nr. " />
+      <TextField fx:id="txt2" layoutX="30.0" layoutY="573.0" prefHeight="26.0" prefWidth="94.0" promptText="Vardas" />
+      <Button fx:id="btn3" layoutX="171.0" layoutY="677.0" mnemonicParsing="false" onAction="#btn3pressed" text="Ištrinti" />
+      <Label layoutX="167.0" layoutY="614.0" prefHeight="18.0" prefWidth="136.0" text="Ištrinti studentą iš sąrašo" />
+      <TextField fx:id="txt3" layoutX="30.0" layoutY="609.0" prefHeight="26.0" prefWidth="94.0" promptText="Pavardė" />
+      <Label layoutX="404.0" layoutY="32.0" text="Registracija" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn2" layoutX="167.0" layoutY="563.0" mnemonicParsing="false" onAction="#btn2pressed" prefHeight="26.0" prefWidth="185.0" text="Įkelti" />
+      <Label layoutX="167.0" layoutY="543.0" text="Įkelti failą su studentų duomenimis" />
+      <TextField fx:id="txt4" layoutX="32.0" layoutY="645.0" prefHeight="26.0" prefWidth="90.0" promptText="Grupė" />
+      <Line endX="-13.79998779296875" endY="-19.0" layoutX="33.0" layoutY="568.0" startX="-13.79998779296875" startY="139.39996337890625" />
+      <Text layoutX="57.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pridėti">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="161.39996337890625" layoutX="239.0" layoutY="547.0" startX="-100.0" />
+      <Button fx:id="btn4" layoutX="550.0" layoutY="566.0" mnemonicParsing="false" onAction="#btn4pressed" text="Pridėti dieną" />
+      <Line endX="-100.0" endY="161.39996337890625" layoutX="463.0" layoutY="543.0" startX="-100.0" />
+      <Line endX="123.5" layoutX="240.0" layoutY="602.0" startX="-100.0" />
+      <Line endX="-100.0" endY="161.39996337890625" layoutX="585.0" layoutY="543.0" startX="-100.0" />
+      <Line endX="-100.0" endY="161.39996337890625" layoutX="801.0" layoutY="543.0" startX="-100.0" />
+      <Label layoutX="375.0" layoutY="551.0" prefHeight="18.0" prefWidth="94.0" text="Filtruoti pagal:" />
+      <TextField fx:id="txt5" layoutX="377.0" layoutY="579.0" prefHeight="26.0" prefWidth="94.0" promptText="Pavardę" />
+      <TextField fx:id="txt6" layoutX="377.0" layoutY="615.0" prefHeight="26.0" prefWidth="94.0" promptText="Grupę" />
+      <Button fx:id="btn5" layoutX="391.0" layoutY="676.0" mnemonicParsing="false" onAction="#btn5pressed" prefHeight="26.0" prefWidth="62.0" text="Filtruoti" />
+      <Button fx:id="btn6" layoutX="525.0" layoutY="614.0" mnemonicParsing="false" onAction="#btn6pressed" prefHeight="26.0" prefWidth="146.0" text="Rodyti užpildytas dienas" />
+      <Button fx:id="btn7" layoutX="534.0" layoutY="663.0" mnemonicParsing="false" onAction="#btn7pressed" text="Rodyti visas dienas" />
+      <Button fx:id="btn8" layoutX="726.0" layoutY="553.0" mnemonicParsing="false" onAction="#btn8pressed" text="PDF" />
+      <TextField fx:id="txtFrom" layoutX="726.0" layoutY="586.0" prefHeight="26.0" prefWidth="76.0" promptText="Nuo" />
+      <TextField fx:id="txtUntil" layoutX="726.0" layoutY="622.0" prefHeight="26.0" prefWidth="83.0" promptText="Iki" />
+      <Button layoutX="719.0" layoutY="676.0" mnemonicParsing="false" onAction="#btn9pressed" prefHeight="26.0" prefWidth="174.0" text="Išsaugoti cvs" />
+   </children>
+</AnchorPane>
