@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.nd6.HelloController">
+   <children>
+      <TableView fx:id="table" layoutX="10.0" layoutY="158.0" prefHeight="489.0" prefWidth="882.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="32.799988746643066" text="ID" />
+            <TableColumn fx:id="first_name" prefWidth="83.99999618530273" text="Name" />
+            <TableColumn fx:id="last_name" prefWidth="109.60002136230469" text="Surname" />
+            <TableColumn fx:id="email" prefWidth="190.40003967285156" text="Email" />
+            <TableColumn fx:id="gender" prefWidth="87.20001220703125" text="Gender" />
+            <TableColumn fx:id="country" prefWidth="110.39996337890625" text="Country" />
+            <TableColumn fx:id="domain_name" prefWidth="151.199951171875" text="Domain name" />
+            <TableColumn fx:id="birth_date" prefWidth="114.4000244140625" text="Birth date" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn1" layoutX="79.0" layoutY="28.0" mnemonicParsing="false" onAction="#bt1pressed" prefHeight="78.0" prefWidth="118.0" text="Upload CSV" />
+      <Text layoutX="366.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter by Birth Date" wrappingWidth="150.58395385742188">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font></Text>
+      <DatePicker fx:id="Date1" layoutX="354.0" layoutY="67.0" onAction="#Date1pressed" prefHeight="26.0" prefWidth="196.0" promptText="From" />
+      <DatePicker fx:id="Date2" layoutX="353.0" layoutY="108.0" onAction="#Date2pressed" prefHeight="26.0" prefWidth="196.0" promptText="Until" />
+      <Button layoutX="615.0" layoutY="67.0" mnemonicParsing="false" onAction="#btn2pressed" text="Sort A-Z" />
+      <Button layoutX="614.0" layoutY="108.0" mnemonicParsing="false" onAction="#btn3pressed" prefHeight="0.0" prefWidth="61.0" text="Sort Z-A" />
+      <Button layoutX="719.0" layoutY="67.0" mnemonicParsing="false" onAction="#btn4pressed" text="Ascending by number" />
+      <Button layoutX="715.0" layoutY="108.0" mnemonicParsing="false" onAction="#btn5pressed" text="Descending by number" />
+      <Line endX="67.0" endY="17.600006103515625" layoutX="522.0" layoutY="127.0" startX="67.0" startY="-111.20000457763672" />
+      <Text layoutX="687.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorting">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Line endX="67.0" endY="17.600006103515625" layoutX="247.0" layoutY="129.0" startX="67.0" startY="-111.20000457763672" />
+      <Label fx:id="Status" layoutX="79.0" layoutY="121.0" text="Status: no cvs">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
