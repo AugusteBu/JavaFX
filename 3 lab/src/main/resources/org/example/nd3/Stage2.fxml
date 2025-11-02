@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="315.0" layoutY="82.0" text="Duomenys" />
+      <Label layoutX="65.0" layoutY="150.0" text="Vardas" />
+      <Label layoutX="62.0" layoutY="225.0" text="Pavardė" />
+      <Label layoutX="321.0" layoutY="150.0" text="Mėgstamiausia spalva" />
+      <TextField fx:id="txt1" layoutX="62.0" layoutY="177.0" />
+      <TextField fx:id="txt2" layoutX="62.0" layoutY="249.0" />
+      <TextField fx:id="txt3" layoutX="321.0" layoutY="177.0" />
+      <Button fx:id="btn1" layoutX="258.0" layoutY="311.0" mnemonicParsing="false" onAction="#btn1pressed" text="Užpildyti" />
+      <TextField fx:id="txt4" editable="false" layoutX="321.0" layoutY="249.0" />
+      <Label layoutX="324.0" layoutY="225.0" text="Sia spalva galima pamatyti:" />
+   </children>
+</AnchorPane>
